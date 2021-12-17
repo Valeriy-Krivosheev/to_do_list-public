@@ -1,0 +1,195 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1.3;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.container {
+  max-width: 900px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.wish {
+  background-image: url(../images/pexels-philippe-donn-1169754.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 100px;
+}
+
+.wish__title {
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+.wish__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 25px;
+}
+
+.wish__input {
+  min-width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.wish__button {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  height: 100%;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.wish__button:hover {
+  background: #2EE59D;
+  -webkit-box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+          box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+  color: white;
+  -webkit-transform: translateY(-7px);
+      -ms-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
+.deal {
+  padding-left: 15px;
+}
+
+.deal__item {
+  color: antiquewhite;
+  font-size: 24px;
+  background-color: transparent;
+  cursor: pointer;
+  display: block;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  min-height: 30px;
+  min-width: 50px;
+}
+
+.deal__item:hover {
+  scale: 1.3;
+}
+
+@media (max-width: 520px) {
+  .wish {
+    padding-top: 60px;
+  }
+  .wish__inner {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .wish__form {
+    max-width: 300px;
+  }
+  .wish__input {
+    display: block;
+    margin-bottom: 5px;
+    min-width: 250px;
+  }
+  .wish__button {
+    width: 100%;
+    height: 50%;
+  }
+  .deal__item {
+    font-size: 20px;
+  }
+}
